@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaitanya Soni | IT Undergraduate & AI Enthusiast Portfolio</title>
+  <meta name="description" content="Personal portfolio of Chaitanya Kalpeshkumar Soni, B.Tech IT undergraduate at Ganpat University specializing in AI tools, Local LLMs, and Web Technologies.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Particles Canvas & Ambient Glow Orbs -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="nav-brand">
+        <span class="nav-avatar">CS</span>
+        <span>Chaitanya Soni</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="resume.html" target="_blank" class="btn-resume-nav">📄 View Resume</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text animate-on-scroll">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Available for Fresher IT &amp; AI Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Chaitanya Soni</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-subtitle-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriter-text">B.Tech IT Undergraduate</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate about exploring generative AI tools, local LLM integrations with Ollama, and building practical web applications. Focused on continuous technical learning from Diploma to B.Tech at Ganpat University.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="resume.html" target="_blank" class="btn btn-primary">
+              📄 View &amp; Print 1-Page Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              💻 Explore Projects
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener" class="social-link" title="GitHub Profile">
+              🐙
+            </a>
+            <a href="https://www.linkedin.com/in/chaitanya-soni-373233302" target="_blank" rel="noopener" class="social-link" title="LinkedIn Profile">
+              💼
+            </a>
+            <a href="mailto:sonichaitanya45@gmail.com" class="social-link" title="Email Me">
+              ✉️
+            </a>
+            <a href="tel:+919099055294" class="social-link" title="Call Me">
+              📞
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-on-scroll delay-2">
+          <div class="hero-card">
+            <div class="profile-avatar-large">CS</div>
+            <h3 class="profile-name">Chaitanya Soni</h3>
+            <p class="profile-tagline">Ahmedabad, Gujarat, India</p>
+
+            <div class="quick-stats">
+              <div class="stat-item">
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Core Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">7.19</div>
+                <div class="stat-label">Diploma CGPA</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">Ganpat U.</div>
+                <div class="stat-label">B.Tech IT</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">Local AI</div>
+                <div class="stat-label">Ollama &amp; LLMs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Background</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A glimpse into my academic pathway, interests, and technical goals.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll delay-1">
+          <h3>🎓 Academic Journey</h3>
+          <p>
+            I recently completed my Diploma in Information Technology with a 7.19 CGPA from B. S. Patel Polytechnic (BSPP), Ganpat University, and transitioned into the 3rd Semester of Bachelor of Technology (B.Tech) in IT at Ganpat University via lateral entry (Diploma-to-Degree).
+          </p>
+          <p>
+            During my diploma studies, I discovered a strong interest in emerging AI technologies, hands-on computer vision concepts like OCR/ANPR, and client-side web technologies.
+          </p>
+        </div>
+
+        <div class="about-card animate-on-scroll delay-2">
+          <h3>⚡ Quick Overview</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Full Name:</span>
+              <span class="info-val">Chaitanya Kalpeshkumar Soni</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location:</span>
+              <span class="info-val">Ahmedabad, Gujarat, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Current Degree:</span>
+              <span class="info-val">B.Tech in Information Technology</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Languages:</span>
+              <span class="info-val">Gujarati (Native), Hindi, English</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Primary Interests:</span>
+              <span class="info-val">Generative AI, Local LLMs, Web Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies, frameworks, and tools I have actively learned and used in projects.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- AI & Modern Tools -->
+        <div class="skill-category-card animate-on-scroll delay-1">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">🤖</div>
+            <h3 class="skill-card-title">AI &amp; Emerging Tech</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Generative AI Tools</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Ollama (Local LLM Setup)</span>
+            <span class="skill-tag">LLM Tooling</span>
+            <span class="skill-tag">OCR / ANPR Basics</span>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skill-category-card animate-on-scroll delay-2">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">🌐</div>
+            <h3 class="skill-card-title">Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Databases & Backend -->
+        <div class="skill-category-card animate-on-scroll delay-3">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">🗄️</div>
+            <h3 class="skill-card-title">Databases &amp; Environments</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL (Basic)</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">DBMS Concepts</span>
+            <span class="skill-tag">XAMPP Stack</span>
+          </div>
+        </div>
+
+        <!-- Developer Tools & Hardware -->
+        <div class="skill-category-card animate-on-scroll delay-1">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">🛠️</div>
+            <h3 class="skill-card-title">Tools &amp; Hardware</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Visual Studio Code</span>
+            <span class="skill-tag">Arduino IDE</span>
+            <span class="skill-tag">Tinkercad</span>
+          </div>
+        </div>
+
+        <!-- Core IT Fundamentals -->
+        <div class="skill-category-card animate-on-scroll delay-2">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">💻</div>
+            <h3 class="skill-card-title">Core IT Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures (Basics)</span>
+            <span class="skill-tag">Computer Networks (Basics)</span>
+            <span class="skill-tag">Cloud Basics</span>
+            <span class="skill-tag">Linux Basics</span>
+            <span class="skill-tag">Windows</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category-card animate-on-scroll delay-3">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap">🤝</div>
+            <h3 class="skill-card-title">Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Eagerness to Learn</span>
+            <span class="skill-tag">Creative Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real project implementations covering computer vision, local AI assistants, and interactive web apps.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card animate-on-scroll delay-1">
+          <div class="project-header-bar">
+            <span class="project-badge">Academic Team Project</span>
+            <div class="project-links">
+              <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener" class="project-icon-btn" title="View on GitHub">
+                🐙
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Automated Car Parking Management System</h3>
+            <p class="project-desc">
+              A smart parking web application built during diploma studies to manage parking slots, calculate fees, and log vehicle movement using optical character recognition.
+            </p>
+            <ul class="project-features">
+              <li>License plate detection via OCR/ANPR with manual plate entry fallback for failed scans.</li>
+              <li>Real-time slot availability tracking and customer pre-booking logic.</li>
+              <li>Automated parking fee calculation based on stay duration.</li>
+              <li>Designed MySQL database schema and integrated frontend views.</li>
+            </ul>
+            <div class="project-techs">
+              <span class="project-tech">Next.js</span>
+              <span class="project-tech">React</span>
+              <span class="project-tech">Node.js</span>
+              <span class="project-tech">OCR/ANPR</span>
+              <span class="project-tech">MySQL</span>
+              <span class="project-tech">XAMPP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card animate-on-scroll delay-2">
+          <div class="project-header-bar">
+            <span class="project-badge">Personal AI Project</span>
+            <div class="project-links">
+              <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener" class="project-icon-btn" title="View on GitHub">
+                🐙
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Jarvis AI Assistant</h3>
+            <p class="project-desc">
+              A desktop/web AI assistant interface powered by locally hosted open-weights large language models running directly on the machine via Ollama.
+            </p>
+            <ul class="project-features">
+              <li>Configured local LLM inference via Ollama for offline, zero-subscription responses.</li>
+              <li>Voice-assisted input capture and conversational response handling.</li>
+              <li>Command execution and automated routine task management.</li>
+            </ul>
+            <div class="project-techs">
+              <span class="project-tech">React</span>
+              <span class="project-tech">Node.js</span>
+              <span class="project-tech">Ollama</span>
+              <span class="project-tech">Local LLM</span>
+              <span class="project-tech">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card animate-on-scroll delay-3">
+          <div class="project-header-bar">
+            <span class="project-badge">Personal Web Project</span>
+            <div class="project-links">
+              <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener" class="project-icon-btn" title="View on GitHub">
+                🐙
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Web-Based UNO Card Game</h3>
+            <p class="project-desc">
+              An interactive, browser-playable implementation of the classic UNO card game built from scratch using vanilla web technologies.
+            </p>
+            <ul class="project-features">
+              <li>Faithful implementation of color and number card matching rules.</li>
+              <li>Action card behaviors including Skip, Reverse, Draw Two (+2), and Wild cards.</li>
+              <li>Deck shuffling and player turn progression engineered with pure JavaScript.</li>
+              <li>Responsive CSS design ensuring smooth play on desktop and mobile screens.</li>
+            </ul>
+            <div class="project-techs">
+              <span class="project-tech">HTML5</span>
+              <span class="project-tech">CSS3</span>
+              <span class="project-tech">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="github-more-card animate-on-scroll">
+        <h3>Looking for more code?</h3>
+        <p style="color: var(--text-muted); margin: 8px 0 18px 0;">Explore additional scripts, repositories, and experiments on my GitHub profile.</p>
+        <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener" class="btn btn-primary">
+          🐙 Visit GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Academics</span>
+        <h2 class="section-title">Education Timeline</h2>
+        <p class="section-subtitle">Chronological progression of my academic background.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- B.Tech -->
+        <div class="timeline-item animate-on-scroll delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2026 &ndash; 2029 (Expected)</div>
+            <h3 class="timeline-title">Bachelor of Technology (B.Tech) &ndash; Information Technology</h3>
+            <div class="timeline-institute">Ganpat University, Mehsana, Gujarat</div>
+            <div class="timeline-score">Currently in 3rd Semester (Lateral Entry / D2D)</div>
+          </div>
+        </div>
+
+        <!-- Diploma -->
+        <div class="timeline-item animate-on-scroll delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023 &ndash; 2026</div>
+            <h3 class="timeline-title">Diploma in Information Technology</h3>
+            <div class="timeline-institute">B. S. Patel Polytechnic (BSPP), Ganpat University, Gujarat</div>
+            <div class="timeline-score">Final CGPA: 7.19 / 10</div>
+          </div>
+        </div>
+
+        <!-- Class 10 -->
+        <div class="timeline-item animate-on-scroll delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Completed: March 2023</div>
+            <h3 class="timeline-title">Secondary School Certificate (Class 10th &ndash; SSC)</h3>
+            <div class="timeline-institute">Apollo International School, Gujarat</div>
+            <div class="timeline-score">Percentage: 55.26%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications / Pending Verification Card -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Credentials</span>
+        <h2 class="section-title">Certifications &amp; Courses</h2>
+        <p class="section-subtitle">Verified technical credentials and learning milestones.</p>
+      </div>
+
+      <div class="pending-notice-card animate-on-scroll">
+        <div class="pending-icon">⏳</div>
+        <div class="pending-content">
+          <h3>Certifications Pending Verification</h3>
+          <p>
+            Credentials from <strong>AWS</strong>, <strong>Google / Google Skills</strong>, and co-curricular college events are currently being organized with official certificate IDs and verification links. They will appear here once verified.
+          </p>
+          <div class="pending-badges">
+            <span class="pending-badge">AWS Learning (Pending)</span>
+            <span class="pending-badge">Google Skills (Pending)</span>
+            <span class="pending-badge">College Tech Events (Pending)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Get in Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Feel free to reach out for entry-level fresher roles, project discussions, or inquiries.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards animate-on-scroll delay-1">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Ahmedabad, Gujarat, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:sonichaitanya45@gmail.com">sonichaitanya45@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="tel:+919099055294">+91 9099055294</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/chaitanya-soni-373233302" target="_blank" rel="noopener">
+                chaitanya-soni-373233302
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card animate-on-scroll delay-2">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" required placeholder="e.g., Alex Johnson">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email Address *</label>
+              <input type="email" id="email" required placeholder="e.g., alex@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="e.g., Fresher IT Role / Interview Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              ✉️ Send Message
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="resume.html" target="_blank">Resume</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Chaitanya Kalpeshkumar Soni. Built with clean HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
