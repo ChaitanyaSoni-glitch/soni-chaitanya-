@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chaitanya Soni - Professional Resume</title>
+  <title>Chaitanya Soni - Professional 2-Page Resume</title>
   <style>
     /* ==========================================================================
        Print & Base Setup
@@ -16,40 +16,40 @@
 
     @page {
       size: A4 portrait;
-      margin: 12mm 15mm;
+      margin: 14mm 16mm 14mm 16mm;
     }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       color: #1e293b;
       background-color: #f1f5f9;
-      line-height: 1.5;
-      font-size: 9.6pt;
+      line-height: 1.55;
+      font-size: 10pt;
       -webkit-font-smoothing: antialiased;
-      padding: 24px 16px 40px;
+      padding: 24px 16px 50px;
     }
 
     /* Screen Action Toolbar */
     .toolbar-wrapper {
-      max-width: 840px;
-      margin: 0 auto 20px;
+      max-width: 850px;
+      margin: 0 auto 24px;
     }
 
     .no-print-toolbar {
       background: #0f172a;
       color: #f8fafc;
-      padding: 12px 20px;
+      padding: 12px 22px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
       border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.2);
     }
 
     .toolbar-info {
-      font-size: 9.5pt;
+      font-size: 9.6pt;
       font-weight: 600;
       letter-spacing: 0.2px;
     }
@@ -65,7 +65,7 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 16px;
+      padding: 8px 18px;
       font-size: 9pt;
       font-weight: 600;
       border-radius: 6px;
@@ -95,30 +95,50 @@
       transform: translateY(-1px);
     }
 
-    /* Printable Paper Container */
-    .resume-container {
-      width: 100%;
-      max-width: 840px;
+    /* Resume Document Wrapper (Screen Display as distinct A4 sheets) */
+    .resume-wrapper {
+      max-width: 850px;
       margin: 0 auto;
-      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .resume-page {
       background: #ffffff;
+      padding: 44px 50px 40px;
       border-radius: 8px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       border: 1px solid #e2e8f0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 1120px;
+    }
+
+    /* Page Footer Info */
+    .page-footer {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      color: #94a3b8;
     }
 
     /* ==========================================================================
        Header & Contact Bar
        ========================================================================== */
-    header {
+    header.main-header {
       text-align: center;
-      padding-bottom: 14px;
-      margin-bottom: 16px;
+      padding-bottom: 16px;
+      margin-bottom: 22px;
       border-bottom: 2px solid #0f172a;
     }
 
     h1 {
-      font-size: 20pt;
+      font-size: 21pt;
       font-weight: 800;
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -127,14 +147,14 @@
     }
 
     .contact-bar {
-      font-size: 9pt;
+      font-size: 9.2pt;
       color: #475569;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 6px 14px;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     .contact-bar a {
@@ -148,49 +168,68 @@
     }
 
     .separator {
-      color: #94a3b8;
+      color: #cbd5e1;
       font-weight: 300;
+    }
+
+    /* Page 2 Running Header */
+    header.page2-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 10px;
+      margin-bottom: 22px;
+      border-bottom: 1.5px solid #0f172a;
+    }
+
+    header.page2-header .p2-name {
+      font-size: 13pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+    }
+
+    header.page2-header .p2-meta {
+      font-size: 8.8pt;
+      color: #64748b;
     }
 
     /* ==========================================================================
        Section Styling & Hierarchy
        ========================================================================== */
     section {
-      margin-bottom: 18px;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      margin-bottom: 22px;
     }
 
-    section:last-child {
-      margin-bottom: 0;
+    section:last-of-type {
+      margin-bottom: 16px;
     }
 
     .section-title {
-      font-size: 11pt;
+      font-size: 11.5pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       color: #0f172a;
       border-bottom: 1.5px solid #cbd5e1;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .objective-text {
-      font-size: 9.3pt;
+      font-size: 9.6pt;
       color: #334155;
-      line-height: 1.55;
+      line-height: 1.6;
       text-align: justify;
     }
 
     /* Entries (Education, Projects) */
     .entry {
-      margin-bottom: 12px;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      margin-bottom: 16px;
     }
 
     .entry:last-child {
@@ -201,7 +240,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-size: 9.6pt;
+      font-size: 9.8pt;
       margin-bottom: 2px;
     }
 
@@ -213,7 +252,7 @@
     .entry-subtitle {
       font-weight: 600;
       color: #334155;
-      font-size: 9.3pt;
+      font-size: 9.4pt;
     }
 
     .entry-meta {
@@ -225,30 +264,38 @@
     }
 
     .entry-details {
-      font-size: 9pt;
+      font-size: 9.2pt;
       color: #475569;
-      margin-bottom: 5px;
-      margin-top: 2px;
+      margin-bottom: 6px;
+      margin-top: 3px;
     }
 
-    .entry-details em {
+    .tech-tag {
       font-style: normal;
-      color: #0284c7;
-      font-weight: 500;
+      color: #0369a1;
+      font-weight: 600;
+      background: #f0f9ff;
+      padding: 1px 6px;
+      border-radius: 4px;
+      border: 1px solid #bae6fd;
+      font-size: 8.8pt;
+      display: inline-block;
+      margin-right: 4px;
+      margin-bottom: 2px;
     }
 
     /* Bullet Lists */
     ul {
       list-style-type: disc;
       margin-left: 20px;
-      margin-top: 3px;
+      margin-top: 4px;
     }
 
     li {
-      margin-bottom: 3.5px;
-      font-size: 9.2pt;
+      margin-bottom: 5px;
+      font-size: 9.4pt;
       color: #334155;
-      line-height: 1.48;
+      line-height: 1.55;
       text-align: justify;
     }
 
@@ -266,18 +313,18 @@
     .skills-block {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 9px;
     }
 
     .skill-row {
       display: flex;
-      font-size: 9.2pt;
-      line-height: 1.45;
+      font-size: 9.4pt;
+      line-height: 1.5;
     }
 
     .skill-category {
       font-weight: 700;
-      min-width: 190px;
+      min-width: 200px;
       color: #0f172a;
       flex-shrink: 0;
     }
@@ -287,14 +334,29 @@
       flex: 1;
     }
 
+    /* Notice / Credentials Card on Page 2 */
+    .credentials-note {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-size: 9pt;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .credentials-note strong {
+      color: #0f172a;
+    }
+
     /* ==========================================================================
-       Print Styling (Clean Single-Page PDF)
+       Print Styling (Clean Strictly 2-Page PDF)
        ========================================================================== */
     @media print {
       body {
         background-color: #ffffff !important;
         padding: 0 !important;
-        font-size: 9.4pt;
+        font-size: 9.6pt;
         color: #000000 !important;
       }
 
@@ -302,29 +364,58 @@
         display: none !important;
       }
 
-      .resume-container {
+      .resume-wrapper {
+        gap: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .resume-page {
         padding: 0 !important;
+        margin: 0 !important;
         max-width: 100% !important;
         border: none !important;
         box-shadow: none !important;
+        min-height: auto !important;
+        page-break-after: always;
+        break-after: page;
       }
 
-      header {
-        border-bottom: 1.8px solid #000000;
-        padding-bottom: 10px;
-        margin-bottom: 12px;
+      .resume-page:last-child {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      .page-break {
+        page-break-before: always !important;
+        break-before: page !important;
+        height: 0;
+        margin: 0;
+        border: none;
+      }
+
+      header.main-header {
+        border-bottom: 2px solid #000000;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+      }
+
+      header.page2-header {
+        border-bottom: 1.5px solid #000000;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
       }
 
       h1 {
         color: #000000 !important;
-        font-size: 19pt;
       }
 
       .section-title {
         color: #000000 !important;
         border-bottom: 1.2px solid #000000;
-        margin-bottom: 8px;
-        padding-bottom: 2px;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        page-break-after: avoid;
+        break-after: avoid;
       }
 
       .entry-title,
@@ -337,36 +428,42 @@
         text-decoration: none;
       }
 
-      .entry-details em {
-        color: #1e293b !important;
+      .tech-tag {
+        color: #000000 !important;
+        background: transparent !important;
+        border: 1px solid #94a3b8 !important;
       }
 
       section {
-        margin-bottom: 14px !important;
-        page-break-inside: avoid;
-        break-inside: avoid;
+        margin-bottom: 18px !important;
       }
 
       .entry {
-        margin-bottom: 10px !important;
+        margin-bottom: 12px !important;
         page-break-inside: avoid;
         break-inside: avoid;
       }
 
       li {
-        line-height: 1.42;
-        margin-bottom: 2.5px;
+        line-height: 1.5;
+        margin-bottom: 3px;
+      }
+
+      .credentials-note {
+        border: 1px solid #cbd5e1 !important;
+        background: transparent !important;
       }
     }
 
     /* Responsive adjustments for mobile screens */
     @media (max-width: 680px) {
       body {
-        padding: 12px 8px;
+        padding: 12px 8px 30px;
       }
 
-      .resume-container {
-        padding: 24px 20px;
+      .resume-page {
+        padding: 24px 18px;
+        min-height: auto;
       }
 
       h1 {
@@ -401,182 +498,287 @@
       .toolbar-actions {
         justify-content: center;
       }
+
+      header.page2-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Screen Toolbar for Actions -->
+  <!-- Screen Toolbar for Printing & Actions -->
   <div class="toolbar-wrapper">
     <div class="no-print-toolbar">
-      <span class="toolbar-info">📄 <strong>Chaitanya Soni</strong> &mdash; Professional ATS Resume</span>
+      <span class="toolbar-info">📄 <strong>Chaitanya Soni</strong> &mdash; Professional 2-Page ATS Resume</span>
       <div class="toolbar-actions">
-        <button class="toolbar-btn btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+        <button class="toolbar-btn btn-print" onclick="window.print()">🖨️ Print / Save 2-Page PDF</button>
         <a href="index.html" class="toolbar-btn btn-portal">🌐 View Portfolio</a>
       </div>
     </div>
   </div>
 
-  <!-- Printable Resume Paper Container -->
-  <main class="resume-container">
+  <!-- Resume Document Wrapper -->
+  <main class="resume-wrapper">
 
-    <!-- Contact Header -->
-    <header>
-      <h1>CHAITANYA KALPESHKUMAR SONI</h1>
-      <div class="contact-bar">
-        <span>Ahmedabad, Gujarat, India</span>
-        <span class="separator">&bull;</span>
-        <span>+91 9099055294</span>
-        <span class="separator">&bull;</span>
-        <a href="mailto:sonichaitanya45@gmail.com">sonichaitanya45@gmail.com</a>
-        <span class="separator">&bull;</span>
-        <a href="https://www.linkedin.com/in/chaitanya-soni-373233302" target="_blank" rel="noopener">linkedin.com/in/chaitanya-soni-373233302</a>
-        <span class="separator">&bull;</span>
-        <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener">github.com/ChaitanyaSoni-glitch</a>
+    <!-- ======================================================================
+         PAGE 1: Personal Info, Objective, Education, Skills, Featured Project
+         ====================================================================== -->
+    <article class="resume-page" id="page-1">
+
+      <!-- Contact Header -->
+      <header class="main-header">
+        <h1>CHAITANYA KALPESHKUMAR SONI</h1>
+        <div class="contact-bar">
+          <span>Ahmedabad, Gujarat, India</span>
+          <span class="separator">&bull;</span>
+          <span>+91 9099055294</span>
+          <span class="separator">&bull;</span>
+          <a href="mailto:sonichaitanya45@gmail.com">sonichaitanya45@gmail.com</a>
+          <span class="separator">&bull;</span>
+          <a href="https://www.linkedin.com/in/chaitanya-soni-373233302" target="_blank" rel="noopener">linkedin.com/in/chaitanya-soni-373233302</a>
+          <span class="separator">&bull;</span>
+          <a href="https://github.com/ChaitanyaSoni-glitch" target="_blank" rel="noopener">github.com/ChaitanyaSoni-glitch</a>
+        </div>
+      </header>
+
+      <!-- Career Objective -->
+      <section>
+        <h2 class="section-title">Career Objective</h2>
+        <p class="objective-text">
+          Motivated Information Technology undergraduate with practical foundational knowledge in web development, database management, and emerging AI tools (Ollama &amp; local LLMs). Seeking an entry-level IT / AI Associate role to apply technical skills in project implementation, support team workflows, and continuously learn modern technologies in an innovative organization.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2 class="section-title">Education</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Ganpat University</span>
+            <span class="entry-meta">Mehsana, Gujarat | 2026 &ndash; 2029 (Expected)</span>
+          </div>
+          <div class="entry-header">
+            <span class="entry-subtitle">Bachelor of Technology (B.Tech) in Information Technology</span>
+            <span class="entry-meta">Current: 3rd Semester (Lateral Entry / D2D)</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">B. S. Patel Polytechnic (BSPP), Ganpat University</span>
+            <span class="entry-meta">Gujarat | 2023 &ndash; 2026</span>
+          </div>
+          <div class="entry-header">
+            <span class="entry-subtitle">Diploma in Information Technology</span>
+            <span class="entry-meta">CGPA: <strong>7.19 / 10</strong></span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Apollo International School</span>
+            <span class="entry-meta">Gujarat | Completed: March 2023</span>
+          </div>
+          <div class="entry-header">
+            <span class="entry-subtitle">Secondary School Certificate (Class 10th &ndash; SSC)</span>
+            <span class="entry-meta">Percentage: <strong>55.26%</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-category">AI &amp; Modern Tools:</span>
+            <span class="skill-values">Generative AI Tools, Prompt Engineering, Ollama (Local LLM Setup), OCR / ANPR Basics</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Web Technologies:</span>
+            <span class="skill-values">HTML5, CSS3, JavaScript, React, Next.js, Node.js, Tailwind CSS</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Databases &amp; Backend:</span>
+            <span class="skill-values">MySQL (Basic), SQL, DBMS Concepts, XAMPP Stack (Apache/MySQL)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Developer Tools &amp; Hardware:</span>
+            <span class="skill-values">Git, GitHub, Visual Studio Code, Arduino IDE, Tinkercad</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Core IT Fundamentals:</span>
+            <span class="skill-values">Data Structures (Basics), Computer Networks (Basics), Cloud Basics, Linux, Windows</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Start) -->
+      <section>
+        <h2 class="section-title">Projects (Featured)</h2>
+
+        <!-- Project 1 -->
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Automated Car Parking Management System</span>
+            <span class="entry-meta">Diploma Academic Project</span>
+          </div>
+          <div class="entry-details">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">XAMPP</span>
+            <span class="tech-tag">OCR / ANPR</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <ul>
+            <li>Engineered a web application to streamline parking slot management and automate vehicle entry and exit logging.</li>
+            <li>Integrated OCR/ANPR functionality for vehicle license plate recognition, with a manual entry fallback option for failed scans.</li>
+            <li>Implemented real-time slot availability, customer pre-booking logic, booking expiry tracking, and duration-based parking fee calculation.</li>
+            <li>Contributed to system workflow design, frontend interface integration, and relational database modeling in MySQL.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Page 1 Footer -->
+      <div class="page-footer">
+        <span>Chaitanya Kalpeshkumar Soni &bull; Information Technology</span>
+        <span>Page 1 of 2</span>
       </div>
-    </header>
 
-    <!-- Career Objective -->
-    <section>
-      <h2 class="section-title">Career Objective</h2>
-      <p class="objective-text">
-        Motivated Information Technology undergraduate with practical foundational knowledge in web development, database management, and emerging AI tools (Ollama &amp; local LLMs). Seeking an entry-level IT / AI Associate role to apply technical skills in project implementation, support team workflows, and continuously learn modern technologies in an innovative organization.
-      </p>
-    </section>
+    </article>
 
-    <!-- Education -->
-    <section>
-      <h2 class="section-title">Education</h2>
+    <!-- Explicit Page Break for Print -->
+    <div class="page-break"></div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Ganpat University</span>
-          <span class="entry-meta">Mehsana, Gujarat | 2026 &ndash; 2029 (Expected)</span>
+    <!-- ======================================================================
+         PAGE 2: Projects (Continued), Soft Skills, Languages, Interests
+         ====================================================================== -->
+    <article class="resume-page" id="page-2">
+
+      <!-- Running Header for Page 2 -->
+      <header class="page2-header">
+        <span class="p2-name">Chaitanya Kalpeshkumar Soni</span>
+        <span class="p2-meta">+91 9099055294 &bull; sonichaitanya45@gmail.com &bull; Ahmedabad, Gujarat</span>
+      </header>
+
+      <!-- Projects (Continued) -->
+      <section>
+        <h2 class="section-title">Projects (Continued)</h2>
+
+        <!-- Project 2 -->
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Jarvis AI Assistant</span>
+            <span class="entry-meta">Personal Project</span>
+          </div>
+          <div class="entry-details">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Ollama</span>
+            <span class="tech-tag">Local LLMs</span>
+          </div>
+          <ul>
+            <li>Developed an interactive AI assistant utilizing locally hosted open-weights language models via Ollama.</li>
+            <li>Implemented voice-assisted input and conversational text handling for processing user queries and automating simple daily routines.</li>
+            <li>Configured local model inference to support private, offline AI responses on the local environment without external API fees.</li>
+            <li>Engineered task execution handlers to parse natural language instructions into actionable desktop commands.</li>
+          </ul>
         </div>
-        <div class="entry-header">
-          <span class="entry-subtitle">Bachelor of Technology (B.Tech) in Information Technology</span>
-          <span class="entry-meta">Current: 3rd Semester (Lateral Entry / D2D)</span>
+
+        <!-- Project 3 -->
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Web-Based UNO Card Game</span>
+            <span class="entry-meta">Personal Project</span>
+          </div>
+          <div class="entry-details">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript (Vanilla)</span>
+          </div>
+          <ul>
+            <li>Created a responsive browser-based card game implementing official UNO gameplay rules, matching logic, and action cards (+2, Skip, Reverse).</li>
+            <li>Engineered client-side game state management, deck shuffling, turn progression, and win-condition checks purely with vanilla JavaScript.</li>
+            <li>Styled with responsive CSS to deliver smooth gameplay across desktop, tablet, and mobile browsers without third-party game libraries.</li>
+          </ul>
         </div>
+      </section>
+
+      <!-- Soft Skills & Professional Attributes -->
+      <section>
+        <h2 class="section-title">Soft Skills &amp; Professional Attributes</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-category">Problem Solving:</span>
+            <span class="skill-values">Analytical thinking, debugging logic, and systematic troubleshooting approach.</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Collaboration:</span>
+            <span class="skill-values">Team collaboration, active listening, and open coordination during group projects.</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Adaptability:</span>
+            <span class="skill-values">Eagerness to learn emerging technologies, fast learner, and resilient under deadlines.</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Creative Thinking:</span>
+            <span class="skill-values">Innovative project ideation, UI design considerations, and user-friendly solution focus.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section>
+        <h2 class="section-title">Languages</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-category">Gujarati:</span>
+            <span class="skill-values">Native proficiency (Speaking, Reading, Writing)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">Hindi:</span>
+            <span class="skill-values">Fluent proficiency (Speaking, Reading, Writing)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-category">English:</span>
+            <span class="skill-values">Basic to Intermediate proficiency (Professional communication)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Interests & Continuous Learning -->
+      <section>
+        <h2 class="section-title">Technical Interests</h2>
+        <div class="skills-block">
+          <div class="skill-row">
+            <span class="skill-category">Areas of Exploration:</span>
+            <span class="skill-values">Generative AI Tools &amp; Prompt Engineering, Local LLM Deployment (Ollama), Full Stack Web Application Development, Computer Vision Applications.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verification & Credentials Status -->
+      <section>
+        <h2 class="section-title">Certifications &amp; Credentials Notice</h2>
+        <div class="credentials-note">
+          <strong>Under Document Verification:</strong> Technical certifications and course completions from <strong>AWS</strong>, <strong>Google / Google Skills</strong>, and university co-curricular tech events are currently being cataloged with official credential verification IDs and links. Verified credentials will be updated directly in the online portfolio.
+        </div>
+      </section>
+
+      <!-- Page 2 Footer -->
+      <div class="page-footer">
+        <span>Chaitanya Kalpeshkumar Soni &bull; Information Technology</span>
+        <span>Page 2 of 2</span>
       </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">B. S. Patel Polytechnic (BSPP), Ganpat University</span>
-          <span class="entry-meta">Gujarat | 2023 &ndash; 2026</span>
-        </div>
-        <div class="entry-header">
-          <span class="entry-subtitle">Diploma in Information Technology</span>
-          <span class="entry-meta">CGPA: <strong>7.19 / 10</strong></span>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Apollo International School</span>
-          <span class="entry-meta">Gujarat | Completed: March 2023</span>
-        </div>
-        <div class="entry-header">
-          <span class="entry-subtitle">Secondary School Certificate (Class 10th &ndash; SSC)</span>
-          <span class="entry-meta">Percentage: <strong>55.26%</strong></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Skills -->
-    <section>
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-block">
-        <div class="skill-row">
-          <span class="skill-category">AI &amp; Modern Tools:</span>
-          <span class="skill-values">Generative AI Tools, Prompt Engineering, Ollama (Local LLM Setup), OCR / ANPR Basics</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Web Technologies:</span>
-          <span class="skill-values">HTML5, CSS3, JavaScript, React, Next.js, Node.js, Tailwind CSS</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Databases &amp; Backend:</span>
-          <span class="skill-values">MySQL (Basic), SQL, DBMS Concepts, XAMPP (Apache/MySQL)</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Developer Tools &amp; Hardware:</span>
-          <span class="skill-values">Git, GitHub, Visual Studio Code, Arduino IDE, Tinkercad</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Core IT Fundamentals:</span>
-          <span class="skill-values">Data Structures (Basics), Computer Networks (Basics), Cloud Basics, Linux, Windows</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <h2 class="section-title">Projects</h2>
-
-      <!-- Project 1 -->
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Automated Car Parking Management System</span>
-          <span class="entry-meta">Diploma Academic Project</span>
-        </div>
-        <div class="entry-details">
-          <em>Technologies: Next.js, React, Node.js, MySQL, XAMPP, OCR/ANPR, JavaScript</em>
-        </div>
-        <ul>
-          <li>Engineered a web application to streamline parking slot management and automate vehicle entry and exit logging.</li>
-          <li>Integrated OCR/ANPR functionality for vehicle license plate recognition, with a manual entry fallback option for failed scans.</li>
-          <li>Implemented real-time slot availability, customer pre-booking logic, booking expiry tracking, and duration-based parking fee calculation.</li>
-          <li>Contributed to system workflow design, frontend interface integration, and relational database modeling in MySQL.</li>
-        </ul>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Jarvis AI Assistant</span>
-          <span class="entry-meta">Personal Project</span>
-        </div>
-        <div class="entry-details">
-          <em>Technologies: React, Node.js, JavaScript, Ollama, Local LLMs</em>
-        </div>
-        <ul>
-          <li>Developed an interactive AI assistant utilizing locally hosted open-weights language models via Ollama.</li>
-          <li>Implemented voice-assisted input and conversational text handling for processing queries and automating simple daily routines.</li>
-          <li>Configured local model inference to support private, offline AI responses on the local environment without external API fees.</li>
-        </ul>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Web-Based UNO Card Game</span>
-          <span class="entry-meta">Personal Project</span>
-        </div>
-        <div class="entry-details">
-          <em>Technologies: HTML5, CSS3, JavaScript</em>
-        </div>
-        <ul>
-          <li>Created a responsive browser-based card game implementing official UNO gameplay rules, matching logic, and action cards (+2, Skip, Reverse).</li>
-          <li>Engineered client-side game state management, deck shuffling, and turn progression purely with vanilla JavaScript.</li>
-          <li>Styled with responsive CSS to deliver smooth gameplay across desktop, tablet, and mobile browsers.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Soft Skills & Languages -->
-    <section>
-      <h2 class="section-title">Soft Skills &amp; Languages</h2>
-      <div class="skills-block">
-        <div class="skill-row">
-          <span class="skill-category">Soft Skills:</span>
-          <span class="skill-values">Problem Solving &amp; Analytical Thinking, Team Collaboration, Adaptability &amp; Eagerness to Learn, Creative Thinking</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Languages:</span>
-          <span class="skill-values">Gujarati (Native), Hindi (Fluent), English (Basic to Intermediate)</span>
-        </div>
-      </div>
-    </section>
+    </article>
 
   </main>
 

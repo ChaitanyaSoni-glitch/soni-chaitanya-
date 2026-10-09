@@ -1,6 +1,6 @@
 # Chaitanya Soni - Resume & Portfolio Website
 
-Welcome! This repository contains the complete personal portfolio website and ATS-compliant 1-page printable resume for **Chaitanya Kalpeshkumar Soni** (B.Tech IT undergraduate at Ganpat University).
+Welcome! This repository contains the complete personal portfolio website and ATS-compliant 2-page printable resume for **Chaitanya Kalpeshkumar Soni** (B.Tech IT undergraduate at Ganpat University).
 
 ---
 
@@ -11,7 +11,7 @@ e:\resume\
 ├── index.html       # Modern responsive personal portfolio website
 ├── style.css        # Clean CSS stylesheet with Dark/Light theme support
 ├── script.js        # Interactive scripts (Theme switcher, mobile menu, form handler)
-├── resume.html      # 1-Page ATS-friendly printable resume
+├── resume.html      # 2-Page ATS-friendly printable resume
 ├── resume.md        # Plain-text Markdown version of the resume (for job portals)
 └── README.md        # Documentation and deployment instructions
 ```
@@ -23,7 +23,7 @@ e:\resume\
 ### Option 1: Direct File Opening (No Installation Required)
 Simply double-click:
 - [`index.html`](file:///e:/resume/index.html) to view the **Portfolio Website**.
-- [`resume.html`](file:///e:/resume/resume.html) to view the **1-Page ATS Resume**.
+- [`resume.html`](file:///e:/resume/resume.html) to view the **2-Page ATS Resume**.
 
 ### Option 2: Using a Local HTTP Server (Recommended)
 You can use Python or Node.js to spin up a local server:
@@ -40,13 +40,13 @@ Right-click on `index.html` inside VS Code and click **"Open with Live Server"**
 
 ---
 
-## 🖨️ How to Export the 1-Page Resume as PDF
+## 🖨️ How to Export the 2-Page Resume as PDF
 
 1. Open [`resume.html`](file:///e:/resume/resume.html) in Google Chrome, Microsoft Edge, or Brave.
-2. Click the top button **"🖨️ Print / Save as PDF"** or press `Ctrl + P` (Windows) / `Cmd + P` (Mac).
+2. Click the top button **"🖨️ Print / Save 2-Page PDF"** or press `Ctrl + P` (Windows) / `Cmd + P` (Mac).
 3. In the print dialog settings:
    - **Destination:** Save as PDF
-   - **Pages:** All (or 1)
+   - **Pages:** All (2 pages)
    - **Layout:** Portrait
    - **Paper Size:** A4
    - **Margins:** Default (or Minimum)
