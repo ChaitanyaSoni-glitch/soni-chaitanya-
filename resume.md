@@ -92,6 +92,10 @@ Motivated Information Technology undergraduate with practical foundational knowl
 
 ---
 
-### CERTIFICATIONS & CREDENTIALS NOTICE
+### CERTIFICATIONS & COMPETITIONS
 
-*Technical certifications and course completions from AWS, Google / Google Skills, and university co-curricular tech events are currently undergoing document verification and will be updated directly in the online portfolio.*
+- **"FIND THE ERROR" Programming Contest — Certificate of Participation**  
+  *Coding Club, U.V. Patel College of Engineering (UVPCE), Ganpat University* | *September 30, 2026*  
+  - Represented programming and analytical problem-solving skills in competitive code debugging, syntax analysis, and error detection.
+
+*(Additional certifications from AWS and Google Skills are currently undergoing document verification and will be updated upon upload.)*
